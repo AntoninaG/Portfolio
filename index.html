@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta charset="UTF-8">   
+    
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+    <title>Портфоліо Антоніни Глажевської</title> 
 </head>
 <body>
-   <h1>Hello World!</h1>
-   <p>I'm hosted with GitHub Pages</p>
+  <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a class="main" href="#">ГОЛОВНА</a></li>
+                <li><a class="works" href="#works">РОБОТИ</a></li>
+                <li><a class="about" href="#">ПРО МЕНЕ</a></li>
+                <li><a class="contacts" href="#">КОНТАКТИ</a></li>
+            </ul>
+        </nav> 
+        <div class="item hero-text">
+            <img class="avtor" src="resources/img/avtor.jpg" alt="Фото веб-дизайнера">
+            <h2 class="helo">Привіт, світ!<img class="smile" src="resources/img/heart.svg" alt="Smile" width="50px"></h2>
+            <p>Мене звуть, Антоніна Глажевська</p>
+            <p>і я веб-дизайнер початківець.</p>
+            <p>Давайте рости і робити прекрасне разом!</p>
+        </div>
+ </header>
+   
+ <section class="section-works">
+     <div class="portfolio">
+          <div class="landing"> 
+                <h3>1. Розробка лендінгу</h3>
+                <img class="bolloons" src="resources/img/Landing_airbollon.jpg" alt="Лендінг для послуг польотів на повіиряних кулях">
+          </div> 
+
+          
+          <h3>2. Розробка візуального вигляду діалогового вікна для внутрішнього<br>користування співробітниками компанії "Airbag"</h3>
+            <div class="slideshow-container">
+                        <div class="mySlides fade" style="order: 2">
+                          <img src="resources/img/Dilog-window2.jpg" alt="Діалогове вікно">
+                        </div>
+                        <div class="mySlides fade" style="order: 2">
+                          <img src="resources/img/Dilog-window-2_tab2.jpg" alt="Вкладка 2">
+                        </div>
+                        <div class="mySlides fade" style="order: 2">
+                          <img src="resources/img/Dilog-window-2_tab3.jpg" alt="Вкладка 3">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)" style="order: 1">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)" style="order: 3">&#10095;</a>
+            </div>          
+     </div> 
+</section>
+ 
+ 
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  -->
+ <script src="resources/js/script.js"></script>
+<!-- <script src="vendors/js/jquery.waypoints.js"></script>   -->
     
 </body>
 </html>
