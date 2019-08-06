@@ -1,10 +1,10 @@
 /* --------------------------------------- */
 /* BASIC SETUP*/
 
-.main {color: #fea70c;}
-.works {color: #5dcd07;}
-.about {color: #f95879;}
-.contacts {color: #fccf00;}
+color: #fea70c
+color: #5dcd07
+color: #f95879
+color: #fccf00
 
 /* --------------------------------------- */
 
@@ -41,6 +41,25 @@ h3 {
     font-weight: 500;
 }
 
+/*
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    
+}
+
+
+.btn:hover,
+.btn:active { background-color: #b05d14;
+}
+*/
+
 /* --------------------------------------- */
 /* HEADER*/
 /* --------------------------------------- */
@@ -51,26 +70,38 @@ header {
     background-position: center;
     max-width: 1340px;
     height: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .main-nav {  
-    display: inline-block;
     font-weight: 700;
     width: 30%;    
 }
 
-li {
-    padding: 25px;
-    font-size: 22px;
+ul {
+    list-style: none;
+    height: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
- 
-li a.main,
-li a.works,
-li a.about,
-li a.contacts{
+
+
+a:link,
+a:visited{
     text-decoration: none;
-    padding: 35px 60px; 
+    padding-bottom: 10px;
+    border-bottom: 1px solid #555;
 }
+
 
 .main {color: #fea70c;}
 .works {color: #5dcd07;}
@@ -78,10 +109,9 @@ li a.contacts{
 .contacts {color: #fccf00;}
 
 .hero-text {  
-    display: inline-block;
-    margin: 60px 0;
+    margin: 40px 0;
     color: #555;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 .smile {
@@ -94,7 +124,7 @@ li a.contacts{
 }
 
 p {
-    font-size: 25px;
+    font-size: 22px;
 }
 /* --------------------------------------- */
 /* WORKS*/
@@ -194,4 +224,23 @@ p {
 /* --------------------------------------- 
 /* ABOUT*/
 /* --------------------------------------- */
-  
+.section-about,
+.section-contacts {
+    text-align: center;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(254, 167, 12, 0.51)), color-stop(rgba(93, 205, 7, 0.4)), color-stop(rgba(249, 88, 121, 0.5)), to(rgba(252, 207, 0, 0.49)));
+    background-image: linear-gradient(to left, rgba(254, 167, 12, 0.51), rgba(93, 205, 7, 0.4), rgba(249, 88, 121, 0.5), rgba(252, 207, 0, 0.49));
+}
+/*#fea70c
+color: #5dcd07
+color: #f95879
+color: #fccf00*/
+
+/* --------------------------------------- */
+/*FOOTER*/
+/* --------------------------------------- */
+
+footer{
+    background-color: #333;
+    padding: 100px;
+    font-size: 80%;
+}
