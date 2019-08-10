@@ -77,7 +77,8 @@ header {
 
 .main-nav {  
     font-weight: 700;
-    width: 30%;    
+    width: 30%;
+    
 }
 
 ul {
@@ -91,22 +92,36 @@ ul {
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+    justify-content: space-evenly;
 }
 
 
 a:link,
 a:visited{
     text-decoration: none;
-    padding-bottom: 10px;
+    padding-bottom: 3px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+a::after {
+    content: "";
+    background: -webkit-gradient(linear, right top, left top, from(rgba(254, 167, 12, 0.51)), color-stop(rgba(93, 205, 7, 0.4)), color-stop(rgba(249, 88, 121, 0.5)), to(rgba(252, 207, 0, 0.49)));
+    background: linear-gradient(to left, rgba(254, 167, 12, 0.51), rgba(93, 205, 7, 0.4), rgba(249, 88, 121, 0.5), rgba(252, 207, 0, 0.49));
+}
+
+a:hover,
+a:active {
     border-bottom: 1px solid #555;
+    border-bottom-color: linear-gradient(to left, rgba(254, 167, 12, 0.51), rgba(93, 205, 7, 0.4), rgba(249, 88, 121, 0.5), rgba(252, 207, 0, 0.49));
 }
 
 
 .main {color: #fea70c;}
 .works {color: #5dcd07;}
 .about {color: #f95879;}
-.contacts {color: #fccf00;}
+.feedback {color: #fccf00;}
 
 .hero-text {  
     margin: 40px 0;
@@ -224,8 +239,7 @@ p {
 /* --------------------------------------- 
 /* ABOUT*/
 /* --------------------------------------- */
-.section-about,
-.section-contacts {
+.section-about {
     text-align: center;
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(254, 167, 12, 0.51)), color-stop(rgba(93, 205, 7, 0.4)), color-stop(rgba(249, 88, 121, 0.5)), to(rgba(252, 207, 0, 0.49)));
     background-image: linear-gradient(to left, rgba(254, 167, 12, 0.51), rgba(93, 205, 7, 0.4), rgba(249, 88, 121, 0.5), rgba(252, 207, 0, 0.49));
@@ -234,6 +248,21 @@ p {
 color: #5dcd07
 color: #f95879
 color: #fccf00*/
+
+/* --------------------------------------- 
+/* feedback*/
+/* --------------------------------------- */
+
+.section-feedback {
+
+/*
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(254, 167, 12, 0.51)), color-stop(rgba(93, 205, 7, 0.4)), color-stop(rgba(249, 88, 121, 0.5)), to(rgba(252, 207, 0, 0.49)));
+    background-image: linear-gradient(to left, rgba(254, 167, 12, 0.51), rgba(93, 205, 7, 0.4), rgba(249, 88, 121, 0.5), rgba(252, 207, 0, 0.49));
+*/
+}
+iframe {
+  
+}
 
 /* --------------------------------------- */
 /*FOOTER*/
