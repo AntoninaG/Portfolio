@@ -83,7 +83,7 @@ header {
 
 ul {
     list-style: none;
-    height: 350px;
+    height: 450px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -100,28 +100,51 @@ ul {
 a:link,
 a:visited{
     text-decoration: none;
-    padding-bottom: 3px;
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-a::after {
-    content: "";
-    background: -webkit-gradient(linear, right top, left top, from(rgba(254, 167, 12, 0.51)), color-stop(rgba(93, 205, 7, 0.4)), color-stop(rgba(249, 88, 121, 0.5)), to(rgba(252, 207, 0, 0.49)));
-    background: linear-gradient(to left, rgba(254, 167, 12, 0.51), rgba(93, 205, 7, 0.4), rgba(249, 88, 121, 0.5), rgba(252, 207, 0, 0.49));
+/*    padding-bottom: 3px;*/
+    color: #5dcd07;
+    -webkit-transition: background-color 2s, border 0.2s, color 0.2s;
+    -webkit-transition: background-color 2s, border 0.2s, color 0.2s;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
 a:hover,
 a:active {
-    border-bottom: 1px solid #555;
-    border-bottom-color: linear-gradient(to left, rgba(254, 167, 12, 0.51), rgba(93, 205, 7, 0.4), rgba(249, 88, 121, 0.5), rgba(252, 207, 0, 0.49));
+/*    height: 3px;*/
+/*    border-bottom: 2px solid rgba(85, 85, 85, 0.2);*/
+/*    color: #eae7e7;*/
+/*
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(254, 167, 12, 0.51)), color-stop(rgba(93, 205, 7, 0.4)), color-stop(rgba(249, 88, 121, 0.5)), to(rgba(252, 207, 0, 0.49)));
+    background-image: linear-gradient(to left, rgba(254, 167, 12, 0.51), rgba(93, 205, 7, 0.4), rgba(249, 88, 121, 0.5), rgba(252, 207, 0, 0.49));
+*/
 }
 
-
+/*
 .main {color: #fea70c;}
 .works {color: #5dcd07;}
 .about {color: #f95879;}
 .feedback {color: #fccf00;}
+*/
+
+@media (-webkit-min-device-pixel-ratio:0) {
+a {
+    background-color: #fea70c;
+    background-image: -webkit-gradient(linear,  right top, left top,  from(#fea70c), color-stop(#f95879), to(#fccf00));
+    background-image: linear-gradient(to left,  #fea70c, #f95879, #fccf00);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .3s .2s;
+    -webkit-background-clip: text;
+font-weight: 700;
+  }
+a:hover {
+    background-position: 0 0;
+    color: transparent;
+    -webkit-transition: .1s 0;
+    transition: .1s 0;
+  }
+}
 
 .hero-text {  
     margin: 40px 0;
