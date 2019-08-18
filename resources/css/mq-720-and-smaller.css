@@ -1,0 +1,112 @@
+body {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+header {     
+    -o-border-image: url(img/hero-min720x1280.jpg);     
+    border-image: url(img/hero-min720x1280.jpg);
+    height: 105vh;
+}
+      
+h1 {font-size: 190%;}
+h2 {font-size: 150%;}
+h3 {font-size: 110%;}
+
+h3 {
+    text-align: center;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 85, 85, 0.4)), to(rgba(85, 85, 85, 0.8)));
+    background-image: linear-gradient(to bottom right, rgba(85, 85, 85, 0.4), rgba(85, 85, 85, 0.8));
+    padding: 15px;
+    font-weight: 500;
+}
+    
+.main-nav {
+    display: none;
+}
+    
+ .mobile-nav-icon {
+    display: inline;
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+    
+.hero-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 20px;
+}
+ 
+
+.smile {
+    margin-left: 20px;
+    width: 10%;
+}
+
+.avtor {
+    width: 150px;
+    border-radius: 30px;
+}
+
+p {
+    font-size: 18px;
+    margin: 7px 3px;
+    line-height: 1.5;
+}
+    /* --------------------------------------- */
+/* WORKS*/
+/* --------------------------------------- */
+
+.section-works {
+    padding: 40px 0;
+    color: #FFF;
+}
+
+.portfolio img {
+    width: 80%;
+    display: block;
+    margin: 40px auto;    
+ }
+
+
+.bolloons {
+    -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --------------------------------------- 
+/* BLOG*/
+/* --------------------------------------- */
+.section-blog {
+    text-align: left;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(254, 167, 12, 0.51)), color-stop(rgba(93, 205, 7, 0.4)), color-stop(rgba(249, 88, 121, 0.5)), to(rgba(252, 207, 0, 0.49)));
+    background-image: linear-gradient(to left, rgba(254, 167, 12, 0.51), rgba(93, 205, 7, 0.4), rgba(249, 88, 121, 0.5), rgba(252, 207, 0, 0.49));
+    padding: 20px;
+}
+/* --------------------------------------- 
+/* feedback*/
+/* --------------------------------------- */
+
+.section-feedback {
+    margin-top: 50px;
+    padding: 0;
+    margin-bottom: 0;
+}
+/* --------------------------------------- */
+/*FOOTER*/
+/* --------------------------------------- */
+
+footer {
+    background-color: #555;
+    padding: 50px;
+    font-size: 80%;
+}
