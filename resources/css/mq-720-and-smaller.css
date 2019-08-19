@@ -1,12 +1,13 @@
 body {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 header {     
-    -o-border-image: url(img/hero-min720x1280.jpg);     
-    border-image: url(img/hero-min720x1280.jpg);
-    height: 105vh;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
       
 h1 {font-size: 190%;}
@@ -21,9 +22,7 @@ h3 {
     font-weight: 500;
 }
     
-.main-nav {
-    display: none;
-}
+
     
  .mobile-nav-icon {
     display: inline;
@@ -32,6 +31,28 @@ h3 {
     position: absolute;
     top: 20px;
     right: 20px;
+}
+.main-nav {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+ul {
+    list-style: none;
+    height: 200px;
+/*    font-size: 16px;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    -webkit-box-pack: space-evenly;
+    justify-content: space-between;
 }
     
 .hero-text {
