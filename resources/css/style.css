@@ -28,7 +28,7 @@ html, body {
 h1,h2,h3 {
     font-weight: 300;
     text-transform: uppercase;
-    word-spacing: 10px;
+    word-spacing: 5px;
     line-height: 2;
     margin: 5px 0;
 }
@@ -243,14 +243,10 @@ p {
     padding: 80px;
 }
 
-.post_box {
-   
-    
-}
+.post_box { margin: 80px auto; }
+.news_meta { font-size: 15px;}
 
-post1 {
-    width: 100%;
-}
+post1 { width: 100%;}
 
 .blog_images {
     width: 80%;
