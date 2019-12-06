@@ -109,7 +109,8 @@ a:active  {
 
 
 @media (-webkit-min-device-pixel-ratio:0) {
-a {
+a, 
+img.menu {
 /*    background-color: #fea70c;*/
     background-image: -webkit-gradient(linear,  right top, left top,  from(#fea70c), color-stop(#f95879), to(#fccf00));
     background-image: linear-gradient(to left,  #fea70c, #f95879, #fccf00);
